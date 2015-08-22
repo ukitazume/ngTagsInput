@@ -193,6 +193,7 @@ describe('tags-input directive', function() {
             element.find('div').click();
 
             // Assert
+            $timeout.flush();
             expect(input.focus).toHaveBeenCalled();
         });
 
